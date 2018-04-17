@@ -7,7 +7,7 @@ import os
 # Set slack integration
 
 SLACK_CHANNEL = 'bot-testing'
-URL="https://hooks.slack.com/services/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"
+URL="https://hooks.slack.com/services/xxxxxxxxxxxx"
 
 # Set trigger threshold
 
@@ -41,7 +41,7 @@ load=datastr.split(' ')[0]
 
 # Post to the AWS bot API via curl
 
-cmd="curl -s -X POST -H 'Content-type: application/json' --data '{\"text\": \":rotating_light: There is a high load on server ` %s ` , current load is ` %s ` \", \"channel\": \"#notifications\"}' https://hooks.slack.com/services/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 -k" % (host,load)
+cmd="curl -s -X POST -H 'Content-type: application/json' --data '{\"text\": \":rotating_light: There is a high load on server ` %s ` , current load is ` %s ` \", \"channel\": \"#notifications\"}' https://hooks.slack.com/services/xxxxxxxxxxxx -k" % (host,load)
 
 # Post to slack if threshold is breached 
 
